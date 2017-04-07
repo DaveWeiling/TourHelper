@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bg_press"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:cardCornerRadius="1dp">
+
+
+    <ImageView
+        android:id="@+id/iv_site"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/default_icon"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="115dp"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/tour_site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="巨石山"
+            android:textColor="#a000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tour_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tour_site"
+            android:text="已有1500人去过"
+            android:textColor="#8000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tour_line_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tour_num"
+            android:text="有1500人正在排队"
+            android:textColor="#8000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
